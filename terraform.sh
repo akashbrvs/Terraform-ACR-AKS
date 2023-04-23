@@ -28,12 +28,12 @@ cat tfplan.json | jq '[.resource_changes[] | {type: .type, name: .change.after.n
 terraform apply tfplan
 
 # delete the infra
-terraform destroy
+#terraform destroy
 
 # cleanup files
-rm terraform.tfstate
-rm terraform.tfstate.backup
-rm .terraform.lock.hcl
-rm tfplan
-rm tfplan.json
-rm -r .terraform/
+#rm terraform.tfstate
+#rm terraform.tfstate.backup
+#rm .terraform.lock.hcl
+#rm tfplan
+#rm tfplan.json
+#rm -r .terraform/
