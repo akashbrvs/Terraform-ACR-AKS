@@ -1,5 +1,5 @@
 # make sure terraform CLI is installed
-terraform
+terraform -version
 
 # format the tf files
 terraform fmt
