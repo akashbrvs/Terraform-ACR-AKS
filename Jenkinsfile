@@ -27,7 +27,7 @@ pipeline {
 		
 		stage ('2-Terraform-de-provision') {
 		when{
-		      expression {ACTION == 'de-provision  '}
+		      expression {ACTION == 'deprovision'}
 		    }
             steps {
               sh 'terraform destroy -auto-approve'
