@@ -13,7 +13,7 @@ pipeline {
 
         stage ('1-GITHUB-Repo-checkout') {
             steps {
-              git (url:'https://github.com/akashbrvs/Loan-calculator.git', branch: 'main', credentialsId: 'GITHUB')
+              git (url:'https://github.com/akashbrvs/Terraform-ACR-AKS.git', branch: 'main', credentialsId: 'GITHUB')
             }
         }
 		stage ('2-Terraform-Provision') {
